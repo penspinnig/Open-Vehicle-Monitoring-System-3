@@ -659,8 +659,8 @@ void OvmsVehicleVWeUp::GetDashboardConfig(DashboardConfig& cfg)
   // Speed:
   dash_gauge_t speed_dash(NULL,Kph);
   speed_dash.SetMinMax(0, 140, 5);
-  speed_dash.AddBand("green", 0, 100);
-  speed_dash.AddBand("yellow", 100, 120);
+  speed_dash.AddBand("green", 0, 90);    //First changes from 100 to 90
+  speed_dash.AddBand("yellow", 90, 120);  //Fisrt changes from 100 to 90
   speed_dash.AddBand("red", 120, 140);
 
   // Voltage:
