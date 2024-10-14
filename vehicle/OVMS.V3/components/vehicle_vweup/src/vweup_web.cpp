@@ -738,3 +738,4 @@ void OvmsVehicleVWeUp::GetDashboardConfig(DashboardConfig& cfg)
 
 #endif //CONFIG_OVMS_COMP_WEBSERVER
 //Test changes via VS Code
+//Test 2
