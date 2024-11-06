@@ -857,14 +857,12 @@ void OvmsVehicleVWeUp::IncomingPollReply(const OvmsPoller::poll_job_t &job, uint
       }
       break;
       
-    /* (znams)
-    case VWUP_BAT_MGMT_SOH_HIST:
+    case VWUP_BAT_MGMT_SOH_HIST: // (znams) Testing the reply from the PID 74CC
       if (PollReply.FromUint8("VWUP_BAT_MGMT_SOH_HIST", value, 4)) {
-        ESP_LOGD(TAG, "VWUP_BAT_MGMT_SOC_ABS=%f => %f", value, BatMgmtSoCAbs->AsFloat());
+        ESP_LOGD(TAG, "Testing_reply_from_74CC=%f", value);
       }
       break;
-    */
-
+    
     case VWUP_BAT_MGMT_ENERGY_COUNTERS: {
       const float coulomb_factor = 0.0018204444;
       const float energy_factor  =  0.0001165084;
